@@ -1,0 +1,15 @@
+artifact_uri: wasbs://mlflow@kedrotest.blob.core.windows.net/artifacts/623249176534272525/99276734b14343539fcfbc0c14d4777c/artifacts
+end_time: 1697309428180
+entry_point_name: ''
+experiment_id: '623249176534272525'
+lifecycle_stage: active
+run_id: 99276734b14343539fcfbc0c14d4777c
+run_name: run1
+run_uuid: 99276734b14343539fcfbc0c14d4777c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697309427721
+status: 3
+tags: []
+user_id: jorda

@@ -1,0 +1,6 @@
+artifact_location: wasbs://mlflow@kedrotest.blob.core.windows.net/artifacts/623249176534272525
+creation_time: 1697309427511
+experiment_id: '623249176534272525'
+last_update_time: 1697309427511
+lifecycle_stage: active
+name: exp2
