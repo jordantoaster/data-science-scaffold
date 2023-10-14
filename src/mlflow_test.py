@@ -4,7 +4,7 @@ import pandas as pd
 # Assumes server running locally.
 mlflow.set_tracking_uri("http://127.0.0.1:5000/")
 
-exp_name = "exp2" 
+exp_name = "exp3" 
 mlflow.set_experiment(exp_name)
 
 run_name = 'run1'

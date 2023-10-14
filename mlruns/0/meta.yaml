@@ -1,6 +1,0 @@
-artifact_location: wasbs://mlflow@kedrotest.blob.core.windows.net/artifacts/0
-creation_time: 1697306568152
-experiment_id: '0'
-last_update_time: 1697306568152
-lifecycle_stage: active
-name: Default
