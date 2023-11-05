@@ -14,7 +14,7 @@ def main():
     # Mock manipulate
     df[['a', 'b']] = df[['a', 'b']].multiply(multiplier)
 
-    print(df.head())
+    print(df.tail())
 
     os.makedirs(params["output_directory"], exist_ok=True)
     df.to_csv(params["output_directory"] + "preprocessed.csv")

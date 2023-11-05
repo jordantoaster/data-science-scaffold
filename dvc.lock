@@ -5,28 +5,28 @@ stages:
     deps:
     - path: data/0_raw/raw.csv
       hash: md5
-      md5: 8760f3ceb71cfb66db1b621028281f20
-      size: 75
+      md5: 1245987d7dc5febaf447a5008fe22f9f
+      size: 82
     - path: src/preprocess.py
       hash: md5
-      md5: 5dffaa65ea3b50c0419c61b5feec1f8c
+      md5: c409021dc4b36877817d398a0061ec58
       size: 493
     params:
       params.yaml:
         preprocess.multiplier: 5
     outs:
-    - path: data/1_preprocessed/
+    - path: data/1_preprocessed
       hash: md5
-      md5: e2b591ea2a96f105e36b358df2d84436.dir
-      size: 106
+      md5: c31fed4ee88912218caba172f83dd6a1.dir
+      size: 117
       nfiles: 1
   featurize:
     cmd: python src/featurization.py
     deps:
     - path: data/1_preprocessed
       hash: md5
-      md5: e2b591ea2a96f105e36b358df2d84436.dir
-      size: 106
+      md5: c31fed4ee88912218caba172f83dd6a1.dir
+      size: 117
       nfiles: 1
     - path: src/featurization.py
       hash: md5
@@ -36,8 +36,8 @@ stages:
       params.yaml:
         featurize.volume: 5
     outs:
-    - path: data/2_features/
+    - path: data/2_features
       hash: md5
-      md5: fe0a1dfc4d0474555c5f5c7a47dc9932.dir
-      size: 133
+      md5: 4c3c992107a81c0dc54ec7bbe4be8de2.dir
+      size: 146
       nfiles: 1

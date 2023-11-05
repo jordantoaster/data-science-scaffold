@@ -21,8 +21,6 @@ data-science-scaffold
 
 ### if the data changes
 
-- `dvc add ...` - add the change file.
-
 - `dvc push` - usually with a git commit to make sure the change is commented upon in git.
 
 ### Checking out a specific version of the data in current branch - If you want to roll back a dataset.
@@ -53,6 +51,8 @@ stages:
 Notice that the source code itself is marked as a dependency as well. If any of these files change, DVC will know that this stage needs to be reproduced when the pipeline is executed.
 
 - `dvc repro`
+
+- `dvc commit`and `dvc push` to add track new files, and send to the remote.
 
 #### Track experiments
 
