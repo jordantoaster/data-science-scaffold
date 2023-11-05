@@ -1,0 +1,10 @@
+preprocess:
+  multiplier: 5
+  input: data/0_raw/raw.csv
+  output_directory: data/1_preprocessed/
+
+featurize:
+  volume: 5
+  input: data/1_preprocessed/preprocessed.csv
+  output_directory: data/2_features/
+  output_filename: features.csv

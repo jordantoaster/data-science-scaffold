@@ -1,0 +1,20 @@
+stages:
+  preprocess:
+    cmd: python src/preprocess.py
+    deps:
+    - data/0_raw/raw.csv
+    - src/preprocess.py
+    params:
+    - preprocess.multiplier
+    outs:
+    - data/1_preprocessed
+
+  featurize:
+    cmd: python src/featurization.py
+    deps:
+    - data/1_preprocessed
+    - src/featurization.py
+    params:
+    - featurize.volume
+    outs:
+    - data/2_features
